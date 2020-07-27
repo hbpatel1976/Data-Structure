@@ -2,9 +2,10 @@
 #include<stdio.h>
 #define row 4
 #define col 3
+#define max 10
 int main()
 {
-   int original[row][col]={0,5,0,0,0,8,0,0,0,1,0,0}, sparse[3][row];
+   int original[row][col]={0,5,0,0,0,8,0,0,0,1,0,0}, sparse[max][3];
    int i,j,count=0;
    for(i=0; i<row; ++i)
    {
