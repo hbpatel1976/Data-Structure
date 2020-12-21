@@ -1,6 +1,5 @@
 /* Check Brackets Balancing in an Expression */
 #include <stdio.h>
-#include <conio.h>
 #define size 10
 int stack[size],top=-1;
 void main()
@@ -9,7 +8,6 @@ char str[20],ch;
 int i=0,flag=0;
 void push(char);
 char pop(void);
-clrscr();
 printf("Enter the expression : ");
 scanf("%s",str);
 while(str[i]!='\0')
@@ -37,7 +35,6 @@ while(str[i]!='\0')
 if(flag==0)printf("Balanced Brackets\n");
 else if(flag==1)printf("Imbalanced Brackets\n");
 else if(flag==2)printf("Invalid Input\n");
-getch();
 }
 void push(char c)
 	{
