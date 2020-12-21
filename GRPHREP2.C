@@ -20,7 +20,6 @@ int matrix[size][size]	={
 			{0,0,0,1,1,0}
 			};
 struct node *list[size],*newnode,*temp;
-clrscr();
 for(i=0; i<size; ++i)list[i]=NULL;
 for(i=0; i<size; ++i)
 	{
@@ -54,5 +53,4 @@ for(i=0; i<size; ++i)
 		}
 	printf("\n");
 	}
-getch();
 }
