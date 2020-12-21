@@ -1,6 +1,5 @@
 /* Adjacency List Representation of Graph */
 #include <stdio.h>
-#include <conio.h>
 #define size 6
 /* For the graph in the lecture note */
 struct node
