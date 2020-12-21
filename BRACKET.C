@@ -12,20 +12,20 @@ printf("Enter the expression : ");
 scanf("%s",str);
 while(str[i]!='\0')
 	{
-	if(str[i]=='{' || str[i]=='(' || str[i]=='<' || str[i]=='[')
+	if(str[i]=='{' || str[i]=='(' || str[i]=='<' || str[i]=='[') /* OPENING BRACKET */
 		{
-		push(str[i]); /* OPENING BRACKET */
+		push(str[i]); 
 		}
-	else if(str[i]=='}' || str[i]==')' || str[i]=='>' || str[i]==']')
+	else if(str[i]=='}' || str[i]==')' || str[i]=='>' || str[i]==']') /* CLOSING BRACKET */
 		{
-		ch=pop(); /* CLOSING BRACKET */
+		ch=pop(); 
 		if(isPair(ch,str[i])==0)
 			{
 			flag=1;
 			break;
 			}
 		}
-	else
+	else /* ANY CHARACTER OTHER THAN BRACKETS (INCLUDING SPACE) */
 		{
 		flag=2;
 		break;
