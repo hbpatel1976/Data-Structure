@@ -44,7 +44,7 @@ for(i=0; i<size; ++i)
 for(i=0; i<size; ++i)
 	{
 	temp=list[i];
-	printf("Neighbours of Node # %d : ",i+i);
+	printf("Neighbours of Node # %d : ",i+1);
 	while(temp!=NULL)
 		{
 		printf("%d\t",temp->node);
