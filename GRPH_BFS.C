@@ -1,8 +1,9 @@
+/* Breadth First Search Traversal Algorithm for Graph */
 #include <stdio.h>
 #define size 8
 int output[size], outputPtr=0, queue[size], front=-1, rear=-1;
 void main()
-{
+{	
 int matrix[size][size]=
 		{
 		{0,1,1,0,0,0,1,0},
