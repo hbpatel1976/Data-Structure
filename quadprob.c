@@ -14,7 +14,7 @@ void main()
 	/* Process each data one by one*/
 	for(i=0; i<dataSize; ++i)
 	{	printf("i=%d\t",i);
-		printf("data[i]=%d\t",data[i]);
+		printf("data[%d]=%d\t",i,data[i]);
 		position=hashFunction(data[i]);
 		tempPosition=position;
 		printf("position given by the function =%d\t",position);
